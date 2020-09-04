@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:paddingTop="10px" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Faculty: "
+                android:textColor="#ff000000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fac"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#ff000000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Code : "
+                android:textColor="#ff000000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scode"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#ff000000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Total : "
+                android:textColor="#ff000000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textColor="#ff000000"
+                android:textSize="30px"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#22090909"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/Usn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Roll no"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/Attended1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attended"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/Missed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Missed"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+</LinearLayout>

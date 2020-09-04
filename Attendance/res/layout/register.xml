@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:paddingTop="100px" >
+
+    <EditText
+        android:id="@+id/Tname"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Faculty Name" >
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:paddingTop="20px"
+        android:password="true" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/Code"
+        android:layout_width="350px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Subject Code"
+        android:paddingTop="20px" />
+
+    <Button
+        android:id="@+id/bu1"
+        android:layout_width="175px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="home_start"
+        android:paddingTop="20px"
+        android:text="Get Started!" />
+
+</LinearLayout>

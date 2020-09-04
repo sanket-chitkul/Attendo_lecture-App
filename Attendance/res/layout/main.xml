@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Subject Code" 
+        android:text="17520">
+
+        <requestFocus>
+        </requestFocus>
+    </EditText>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:paddingTop="20px"
+        android:password="true" 
+        android:text="123">
+    </EditText>
+
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="home"
+        android:paddingTop="20px"
+        android:text="Sign in" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:onClick="register"
+        android:text="Admin" />
+
+</LinearLayout>
